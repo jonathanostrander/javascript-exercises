@@ -1,7 +1,8 @@
 const removeFromArray = function (...args) {
-	let provideArray = args[0];
+	let providedArray = args[0];
 	let newArray = [];
-	provideArray.forEach((item) => {
+
+	providedArray.forEach((item) => {
 		if (!args.includes(item)) {
 			newArray.push(item);
 		}
